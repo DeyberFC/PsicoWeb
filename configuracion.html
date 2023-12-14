@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        .configuracion {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .configuracion h2 {
+            margin-top: 0;
+        }
+
+        .entry {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .entry label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .entry p {
+            margin: 0;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="configuracion">
+        <h2>Configuración de Usuario</h2>
+
+        <!-- Información del usuario -->
+        <div class="entry">
+            <label for="nombre">Nombre:</label>
+            <p>Deyber Flores Cabezas</p>
+
+            <label for="correo">Correo Electrónico:</label>
+            <p>deyber.flores@example.com</p>
+
+            <label for="telefono">Teléfono:</label>
+            <p>+123456789</p>
+
+            <!-- Agrega más información según sea necesario -->
+        </div>
+
+        <!-- Botón para regresar a la página principal -->
+        <button class="back-button" onclick="window.location.href='usuario.html'">Regresar</button>
+    </div>
+
+</body>
+</html>

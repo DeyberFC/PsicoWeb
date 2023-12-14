@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Cambia la dirección a fila */
+    align-items: flex-start;
+    max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 20px auto; /* Ajusta los márgenes según sea necesario */
+    border: 2px solid #3498db; /* Borde azul */
+    padding: 10px; /* Espaciado interno */
+}
+
+.user-info,
+.company-logo,
+.user-navigation,
+.page-content {
+    box-sizing: border-box;
+}
+
+.user-info,
+.company-logo {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.company-logo img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    height: auto;
+}
+
+.user-navigation {
+    margin: 20px;
+}
+
+.user-navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.user-navigation li {
+    margin-bottom: 10px;
+}
+
+.user-navigation a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.user-navigation a:hover {
+    background-color: #eee;
+}
+
+.page-content {
+    flex: 1; /* Aprovecha el espacio disponible */
+    padding: 20px;
+}
+
+.separator-line {
+    margin: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+/* Estilo de la tabla */
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 20px 0; /* Modifica el margen superior según sea necesario */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Ajuste de margen superior para la tabla */
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 20px 0; /* Modifica el margen superior según sea necesario */
+}
+
+/* Ajuste de margen inferior para el cuadro de información */
+.page-content {
+    padding: 20px;
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+}
+
+.search-bar {
+    margin: 20px 0;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    margin-right: 8px;
+}
+
+.search-bar button {
+    padding: 8px;
+    cursor: pointer;
+} 
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup table {
+    width: 100%;
+}

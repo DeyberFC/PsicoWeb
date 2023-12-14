@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        .agenda {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .entry {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .entry h3 {
+            margin-top: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="agenda">
+        <h2>Mi Agenda</h2>
+
+        <div class="entry">
+            <h3>Cita del 1 de diciembre</h3>
+            <p>Cliente: Juan Pérez</p>
+            <p>Hora: 10:00 AM</p>
+        </div>
+
+        <div class="entry">
+            <h3>Cita del 5 de diciembre</h3>
+            <p>Cliente: María Gómez</p>
+            <p>Hora: 2:30 PM</p>
+        </div>
+
+        <!-- Formulario para agregar citas -->
+        <h3>Agregar Cita</h3>
+        <form id="agendaForm">
+            <label for="cliente">Cliente:</label>
+            <input type="text" id="cliente" name="cliente" required>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <button type="button" onclick="agregarCita()">Agregar Cita</button>
+        </form>
+    </div>
+
+    <script>
+        function agregarCita() {
+            // Obtener valores del formulario
+            var cliente = document.getElementById('cliente').value;
+            var fecha = document.getElementById('fecha').value;
+            var hora = document.getElementById('hora').value;
+
+            // Crear una nueva entrada en la agenda
+            var agenda = document.querySelector('.agenda');
+            var nuevaEntrada = document.createElement('div');
+            nuevaEntrada.className = 'entry';
+            nuevaEntrada.innerHTML = `<h3>Cita del ${fecha}</h3><p>Cliente: ${cliente}</p><p>Hora: ${hora}</p>`;
+            agenda.appendChild(nuevaEntrada);
+
+            // Limpiar el formulario
+            document.getElementById('agendaForm').reset();
+        } 
+
+
+    </script>
+  <button class="back-button" onclick="window.location.href='usuario.html'">Regresar</button>
+</body>
+</html>

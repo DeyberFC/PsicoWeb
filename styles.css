@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #fff, #f68aa8);
+    min-height: 100vh;
+}
+
+header {
+    background-color: transparent;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #f68aa8;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+nav {
+    margin-left: auto; /* Mueve la barra de navegación hacia la derecha */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 15px; /* Añade un margen derecho para separar los enlaces */
+}
+
+.auth {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.login {
+    color: #f68aa8;
+    margin-left: 20px; /* Añade un margen izquierdo para separar Inicia sesión */
+}body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #fff, #f68aa8);
+    min-height: 100vh;
+}
+
+header {
+    background-color: transparent;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #f68aa8;
+}
+
+.logo img { 
+    max-width: 300px;
+}
+
+nav {
+    margin-left: auto; /* Mueve la barra de navegación hacia la derecha */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px; /* Añade un margen derecho para separar los enlaces */
+}
+
+.auth {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.login {
+    color: #f68aa8;
+    margin-left: 15px; /* Añade un margen izquierdo para separar Inicia sesión */
+}
+
+
+
+.start-now a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.start-now {
+    background: linear-gradient(to bottom, #b82f56, #b82f56);
+    padding: 10px 20px;
+    border-radius: 5px; 
+    margin-left: 30px;/* Se añade un margen izquierdo  */
+    margin-right: 40px; /* Se añade un margen derecho  */
+}
+
+.start-now a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+} 
+
+
+.subscription-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px;
+} 
+
+.subscription-section h1 {
+    color: #333;
+    position:static;
+   
+    font-size: 100px; /* Ajusta el tamaño del texto del título */
+    margin-bottom: 80px; /* Agrega un espacio entre el título y los cuadros */
+}
+
+.subscription-box {
+    background-color: #fff;
+    padding: 100px; /* Aumenta el espacio interno */
+    border-radius: 15px; /* Aumenta el radio de borde para un aspecto más redondeado */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Ajusta la sombra */
+    text-align: center;
+    width: 300px; /* Aumenta el ancho */
+    margin: 20px;
+}
+
+.subscription-box h2 {
+    color: #333;
+    font-size: 24px; /* Aumenta el tamaño del título */
+}
+
+.subscription-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.subscription-box ul li {
+    margin-bottom: 15px; /* Aumenta el espacio entre elementos de la lista */
+    font-size: 16px; /* Ajusta el tamaño del texto de la lista */
+}
+
+.subscription-box button {
+    background-color: #f68aa8;
+    color: #fff;
+    padding: 15px 30px; /* Aumenta el espacio dentro del botón */
+    border: none;
+    border-radius: 8px; /* Aumenta el radio del borde del botón */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px; /* Ajusta el tamaño del texto del botón */
+} 
+
+.about-us-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.about-us-text {
+    border: 4px solid #882d2d;
+    border-radius: 10px; /* Ajusta el valor de acuerdo a tu preferencia */
+    padding: 15px;
+    max-width: 800px; /* Limita el ancho del texto */
+    margin-bottom: 20px; /* Espacio en la parte inferior del texto */
+    margin-top: -100px; /* Ajusta el margen superior para mover los textos más arriba */
+}
+
+.about-us-text h2 {
+    margin-bottom: 10px; /* Ajusta el espacio en la parte inferior del encabezado h2 */
+}
+
+.about-us-image img {
+    max-width: 300px; /* Ancho máximo de la imagen mediana */
+    height: auto; /* Hace que la altura se ajuste automáticamente para mantener la proporción */
+    border-radius: 80px; /* Añade esquinas redondeadas a la imagen si lo deseas */
+}    
+
+.vision-mision-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+ 
+.vision-box,
+.mision-box {
+    max-width: 300px; /* Ancho máximo más pequeño */
+    text-align:justify;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+} 
+
+
+.page-content p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.info-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info-box {
+    flex-basis: calc(45% - 10px); /* Ajusta el ancho al 25% */
+    box-sizing: border-box;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #d36e6e;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #a9ceec7e; /* Color de fondo plomo difuminado */
+}
+
+.info-box h3 {
+    margin-bottom: 10px;
+}
+
+.info-box a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
